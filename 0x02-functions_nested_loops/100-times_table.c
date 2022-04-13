@@ -1,11 +1,10 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
  * print_times_table - Prints the times table for n.
  * @n: The multiplication table requested.
  * Return: Nothing.
  */
-void print_times_table(2)
+void print_times_table(int n)
 {
 int i, j, res;
 
