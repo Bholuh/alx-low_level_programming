@@ -1,32 +1,21 @@
 #include "main.h"
 
 /**
- * puts2 - prints a string, followed by a new line
- * @str: pointer to the string to print
- * Return: void
+ *puts2 - prints every character of a string
+ *@str: A pointer to an int that will be changed
+ *
+ *Return: void which means it is correct
  */
+
 void puts2(char *str)
-
 {
+int a;
 
-int i = 0;
-
-while (str[i] != '\0');
-
+for (a = 0; str[a] != '\0'; a++)
 {
-
-if (i % 2 == 0)
-
-{
-
-_putchar(str[i]);
-
+if (a % 2 == 0)
+_putchar (str[a]);
 }
 
-i++;
-
-}
-
-_putchar('\n');
-
+_putchar ('\n');
 }
