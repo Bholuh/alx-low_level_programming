@@ -2,39 +2,39 @@
 /**
  * reverse_array - reverses the content of an array of integers
  * @a: an array of integers
- * @n: number of elements of an array
+ * @n: number of elements of the array
  * Return: returns void
  */
 
 void reverse_array(int *a, int n)
 
 {
-int *start_d, *end_d d;
-int e;
+int *start_c, *end_c, c;
+int j;
 
 
-start_d = a;
-end_d = a;
+start_c = a;
+end_c = a;
 
 
-for (e = 0; e < n - 1; e++)
+for (j = 0; j < n - 1; j++)
 {
-end_d++;
+end_c++;
 }
 
 
 
 
-for (e = 0; e < n / 2; e++)
+for (j = 0; j < n / 2; j++)
 {
 
 
-d = *end_c;
-*end_d = *start_d;
-*start_d = d;
+c = *end_c;
+*end_c = *start_c;
+*start_c = c;
 
-start_d++;
-end_d--;
+start_c++;
+end_c--;
 }
 
 }
