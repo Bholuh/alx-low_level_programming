@@ -27,7 +27,7 @@ d = *end_c;
 *end_d = *start_d;
 *start_d = d;
 
-star_d++;
+start_d++;
 end_d--;
 }
 
