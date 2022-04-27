@@ -16,7 +16,7 @@ while (a < 8) /*number repetitions*/
 b = 0;
 while (b < 8)
 {
-_putchar (a[a][b]);
+_putchar (i[a][b]);
 b++;
 }
 _putchar ('\n'); /*print new line*/
