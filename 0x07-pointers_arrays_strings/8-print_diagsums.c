@@ -27,6 +27,6 @@ sum2 = sum2 + *(a + j * size + size - j - 1);
 j++; /*add +1*/
 }
 
-printf("%j, %j\n", sum1, sum2);
+printf("%i, %i\n", sum1, sum2);
 
 }
