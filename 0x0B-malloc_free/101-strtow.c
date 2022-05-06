@@ -8,7 +8,7 @@
 char **strtow(char *str)
 {
 char **ptr;
-int a, c, len, start, end, b = 0;
+int i, k, len, start, end, j = 0;
 int words =  countWords(str);
 
 if (!str || !countWords(str))
@@ -16,29 +16,29 @@ return (NULL);
 ptr = malloc(sizeof(char *) * (words + 1));
 if (!ptr)
 return (NULL);
-for (a = 0; a < words; a++)
+for (i = 0; i < words; i++)
 {
-start = startIndex(str, b);
+start = startIndex(str, j);
 end = endIndex(str, start);
 len = end - start;
-ptr[a] = malloc(sizeof(char) * (len + 1));
-if (!ptr[a])
+ptr[i] = malloc(sizeof(char) * (len + 1));
+if (!ptr[i])
 {
-a -= 1;
-while (a >= 0)
+i -= 1;
+while (i >= 0)
 {
-free(ptr[a]
-a--;
+free(ptr[i]);
+i--;
 }
 free(ptr);
 return (NULL);
 }
-for (c = 0; c < len; c++)
-ptr[a][c] = str[start++];
-ptr[a][c++] = '\0';
-b = end + 1;
+for (k = 0; k < len; k++)
+ptr[i][k] = str[start++];
+ptr[i][k++] = '\0';
+j = end + 1;
 }
-ptr[a] = NULL;
+ptr[i] = NULL;
 return (ptr);
 }
 
