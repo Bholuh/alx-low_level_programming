@@ -1,4 +1,5 @@
 #include "main.h"
+#include "other_header.h"
 
 /**
  * strtow - splits a string into words
