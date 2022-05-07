@@ -9,7 +9,7 @@ char **strtow(char *str)
 {
 	char **ptr;
 	int i, k, len, start, end, j = 0;
-	int words = countwords(str);
+	int words = Countwords(str);
 
 	if (!str || !countwords(str))
 		return (NULL);
@@ -18,8 +18,8 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; i < words; i++)
 	{
-		start = startindex(str, j);
-		end = endindex(str, start);
+		start = Startindex(str, j);
+		end = Endindex(str, start);
 		len = end - start;
 		ptr[i] = malloc(sizeof(char) * (len + 1));
 		if (!ptr[i])
