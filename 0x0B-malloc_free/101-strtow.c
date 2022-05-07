@@ -9,7 +9,7 @@ char **strtow(char *str)
 {
 	char **ptr;
 	int i, k, len, start, end, j = 0;
-	int words =  countwords(str);
+	int words = countwords(str);
 
 	if (!str || !countwords(str))
 		return (NULL);
