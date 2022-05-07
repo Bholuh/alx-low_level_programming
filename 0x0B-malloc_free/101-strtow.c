@@ -1,5 +1,4 @@
 #include "main.h"
-#include "other_header.h"
 
 /**
  * strtow - splits a string into words
@@ -11,6 +10,8 @@ char **strtow(char *str)
 char **ptr;
 int i, k, len, start, end, j = 0;
 int words = countWords(str);
+int start = startIndex(str, j);
+int end = endIndex(str, start);
 
 if (!str || !countWords(str))
 return (NULL);
