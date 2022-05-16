@@ -28,8 +28,8 @@ switch (format[a])
 case 'c':
 printf("%c", va_arg(valist, int)), c = 1;
 break;
-case 'a':
-printf("%a", va_arg(valist, int)), c = 1;
+case 'i':
+printf("%d", va_arg(valist, int)), c = 1;
 break;
 case 'f':
 printf("%f", va_arg(valist, double)), c = 1;
